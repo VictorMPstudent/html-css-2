@@ -7,23 +7,27 @@
     <title>Flexbox Demo</title>
   </head>
   <style>
+    body {
+      --box-size: 150px;
+    }
     #a {
       background-color: green;
       width: 150px;
-      height: 150px;
+      height: var(--box-size);
       border-radius: 50%;
     }
     #b {
       flex: 2;
       background-color: red;
       width: 250px;
+      height: var(--box-size);
     }
     #c {
       background-color: blue;
       width: 50px;
-     flex: 1;
+      height: var(--box-size);
     }
-    .special-layout{
+    .special-layout {
       height: 800px;
       border: 2px solid black;
       display: flex;
